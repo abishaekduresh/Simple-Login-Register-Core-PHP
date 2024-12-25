@@ -11,6 +11,7 @@ body {
 
 .container {
   background: #fff;
+  margin: 0 auto;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -95,4 +96,53 @@ body {
   width: 100%;
   font-size: 14px;
   color: #777;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 15px;
+    margin: 10px;
+    max-width: 100%;
+  }
+
+  .form-group input {
+    font-size: 14px;
+  }
+
+  .form-button button {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  #footer,
+  #developer {
+    font-size: 12px;
+  }
+}
+
+/* Extra small devices (phones) */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .form-group input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .form-button button {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  #footer,
+  #developer {
+    font-size: 12px;
+  }
 }
